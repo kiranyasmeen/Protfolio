@@ -1,0 +1,16 @@
+# Vercel Deployment Ignore
+node_modules
+dist
+.vercel
+.git
+.github
+.vscode
+.eslintcache
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore redundant images if using public/profile.png
+image.png
+Downloads/
