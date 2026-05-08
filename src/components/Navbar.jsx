@@ -34,8 +34,8 @@ const Navbar = () => {
           animate={{ opacity: 1, x: 0 }}
           className="text-2xl font-black tracking-tight cursor-pointer"
         >
-          <span className="text-slate-900">Kiran </span>
-          <span className="text-indigo-600">Yasmeen</span>
+          <span className="text-slate-900">Style</span>
+          <span className="text-indigo-600">Sphere</span>
         </motion.div>
 
         {/* Desktop Menu */}
