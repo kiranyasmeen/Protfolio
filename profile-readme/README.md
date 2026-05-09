@@ -1,5 +1,5 @@
 ﻿<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=280&section=header&text=Kiran%20Yasmeen&fontSize=80&animation=fadeIn&fontAlignY=35" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=280&section=header&text=Majid%20Ali&fontSize=80&animation=fadeIn&fontAlignY=35" width="100%" />
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@ I am a passionate **AI Specialist** and **Modern Web Architect** from Pakistan. 
 
 ### 🏆 Achievements & Excellence
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=kiranyasmeen&theme=radical&no-bg=true&margin-w=15" width="100%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=majidali&theme=radical&no-bg=true&margin-w=15" width="100%" />
 </p>
 
 ---
@@ -33,12 +33,12 @@ I am a passionate **AI Specialist** and **Modern Web Architect** from Pakistan. 
 
 ### 📉 Neural Activity & Insights
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kiranyasmeen&theme=tokyonight&area=true" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=majidali&theme=tokyonight&area=true" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kiranyasmeen&show_icons=true&theme=radical&hide_border=true&count_private=true" height="180" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kiranyasmeen&layout=compact&theme=radical&hide_border=true" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api?username=majidali&show_icons=true&theme=radical&hide_border=true&count_private=true" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=majidali&layout=compact&theme=radical&hide_border=true" height="180" />
 </p>
 
 ---
