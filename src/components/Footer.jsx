@@ -16,13 +16,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 lg:col-span-1">
             <h3 className="text-2xl font-black text-slate-900 mb-6">
-              Majid <span className="text-primary-600">Ali</span>
+              Kiran <span className="text-primary-600">Yasmeen</span>
             </h3>
             <p className="text-slate-500 mb-8 font-medium leading-relaxed">
               Full-Stack Web Developer & UI/UX Specialist crafting high-performance digital experiences.
             </p>
             <div className="flex space-x-4">
-              <motion.a whileHover={{ y: -5 }} href="https://github.com/majidali" target="_blank" className="p-3 bg-slate-50 rounded-xl text-slate-600 hover:text-primary-600 hover:bg-primary-50 transition-all">
+              <motion.a whileHover={{ y: -5 }} href="https://github.com/kiranyasmeen" target="_blank" className="p-3 bg-slate-50 rounded-xl text-slate-600 hover:text-primary-600 hover:bg-primary-50 transition-all">
                 <GithubIcon size={20} />
               </motion.a>
               <motion.a whileHover={{ y: -5 }} href="#" className="p-3 bg-slate-50 rounded-xl text-slate-600 hover:text-primary-600 hover:bg-primary-50 transition-all">
@@ -74,7 +74,7 @@ const Footer = () => {
 
         <div className="pt-10 border-t border-slate-50 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-slate-400 font-bold text-sm">
-            © {currentYear} Majid Ali. All rights reserved.
+            © {currentYear} Kiran Yasmeen. All rights reserved.
           </p>
           <div className="flex space-x-8">
             <a href="#" className="text-sm font-bold text-slate-400 hover:text-slate-900 transition-colors">Privacy Policy</a>

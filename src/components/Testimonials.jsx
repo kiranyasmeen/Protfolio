@@ -6,7 +6,7 @@ const Testimonials = () => {
     {
       name: "Freelance Client",
       role: "Digital Entrepreneur",
-      content: "Majid created a clean and professional website with great attention to detail. The results exceeded my expectations.",
+      content: "Kiran created a clean and professional website with great attention to detail. The results exceeded my expectations.",
       rating: 5,
     },
     {
@@ -18,7 +18,7 @@ const Testimonials = () => {
     {
       name: "Small Business Owner",
       role: "Commerce Leader",
-      content: "Excellent communication, beautiful design, and fast delivery. Majid is a true professional who understands user experience.",
+      content: "Excellent communication, beautiful design, and fast delivery. Kiran is a true professional who understands user experience.",
       rating: 5,
     }
   ];

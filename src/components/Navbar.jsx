@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { GithubIcon } from './Icons';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -27,20 +27,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'py-4 glass border-b border-slate-100 shadow-xl shadow-indigo-500/5' : 'py-8 bg-transparent'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'py-4 glass border-b border-slate-100 shadow-sm' : 'py-8 bg-transparent'}`}>
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-black tracking-tighter cursor-pointer flex items-center space-x-2"
+          className="text-2xl font-black tracking-tight cursor-pointer"
         >
-          <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
-            <span className="text-white text-xl">S</span>
-          </div>
-          <div className="flex flex-col leading-none">
-            <span className="text-slate-900">Style</span>
-            <span className="text-indigo-600 text-[10px] uppercase tracking-[0.3em] font-black">Sphere</span>
-          </div>
+          <span className="text-slate-900">Style</span>
+          <span className="text-indigo-600">Sphere</span>
         </motion.div>
 
         {/* Desktop Menu */}
@@ -54,10 +49,9 @@ const Navbar = () => {
                   smooth={true}
                   offset={-80}
                   duration={800}
-                  className="text-slate-400 hover:text-slate-900 cursor-pointer transition-all font-black text-[10px] uppercase tracking-[0.2em] relative group"
+                  className="text-slate-500 hover:text-slate-900 cursor-pointer transition-colors font-bold text-xs uppercase tracking-[0.15em]"
                 >
                   {link.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
                 </Link>
               </li>
             ))}
@@ -65,12 +59,12 @@ const Navbar = () => {
           
           <div className="flex items-center space-x-6">
             <a 
-              href="https://github.com/majidali" 
+              href="https://github.com/kiranyasmeen" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-slate-900 transition-colors"
             >
-              <GithubIcon size={20} />
+              <GithubIcon size={22} />
             </a>
             <Link
               to="contact"
@@ -78,10 +72,9 @@ const Navbar = () => {
               smooth={true}
               offset={-80}
               duration={800}
-              className="px-6 py-2.5 bg-slate-900 text-white rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-indigo-600 transition-all shadow-lg shadow-slate-200 flex items-center space-x-2"
+              className="px-6 py-2.5 bg-slate-900 text-white rounded-lg text-xs font-black uppercase tracking-widest hover:bg-indigo-600 transition-all shadow-lg shadow-slate-200"
             >
-              <span>Work With Me</span>
-              <ArrowUpRight size={14} />
+              Contact Me
             </Link>
           </div>
         </div>
@@ -90,9 +83,9 @@ const Navbar = () => {
         <div className="lg:hidden">
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 text-slate-900 bg-slate-50 rounded-xl"
+            className="p-2 text-slate-900"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
       </div>
@@ -101,13 +94,13 @@ const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
             className="lg:hidden glass border-t border-slate-100 overflow-hidden"
           >
             <div className="container mx-auto px-6 py-10">
-              <ul className="flex flex-col space-y-4">
+              <ul className="flex flex-col space-y-6">
                 {navLinks.map((link) => (
                   <li key={link.to}>
                     <Link
@@ -117,14 +110,14 @@ const Navbar = () => {
                       offset={-80}
                       duration={800}
                       onClick={() => setIsOpen(false)}
-                      className="text-slate-500 hover:text-indigo-600 text-xl font-black block py-2 border-b border-slate-50"
+                      className="text-slate-500 hover:text-indigo-600 text-lg font-bold block"
                     >
                       {link.name}
                     </Link>
                   </li>
                 ))}
               </ul>
-              <div className="mt-10 flex flex-col space-y-4">
+              <div className="mt-10 pt-10 border-t border-slate-100 flex flex-col space-y-4">
                 <Link
                   to="contact"
                   spy={true}
@@ -132,11 +125,19 @@ const Navbar = () => {
                   offset={-80}
                   duration={800}
                   onClick={() => setIsOpen(false)}
-                  className="px-6 py-4 bg-slate-900 text-white rounded-2xl text-center font-black uppercase tracking-widest flex items-center justify-center space-x-2"
+                  className="px-6 py-4 bg-slate-900 text-white rounded-xl text-center font-black uppercase tracking-widest"
                 >
-                  <span>Work With Me</span>
-                  <ArrowUpRight size={18} />
+                  Contact Me
                 </Link>
+                <a 
+                  href="https://github.com/kiranyasmeen" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-6 py-4 border border-slate-200 rounded-xl flex items-center justify-center space-x-3 text-slate-900 font-bold"
+                >
+                  <GithubIcon size={22} />
+                  <span>View GitHub</span>
+                </a>
               </div>
             </div>
           </motion.div>
@@ -147,4 +148,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
